@@ -8,6 +8,10 @@
   "icon": "assets/mkdocs.png",
   "homepage": "https://10k.xyz",
   "license": "MIT",
+  "tags": [
+    "markdown",
+    "mkdocs"
+  ],
   "engines": {
     "vscode": "^1.83.0"
   },
