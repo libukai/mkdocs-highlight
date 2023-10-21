@@ -1,0 +1,17 @@
+name: MkDocs
+patterns:
+  - include: "#timeline"
+repository:
+  timeline:
+    begin: "(:):(timeline)(:):"
+    end: "(:):(/timeline)(:):"
+    beginCaptures:
+      "2": { name: "keyword.control.mkdocs" }
+    endCaptures:
+      "2": { name: "keyword.control.mkdocs" }
+    patterns:
+      - match: "^\\s*-?\\s*(title|content|icon|sub_title)\\s*:"
+        captures:
+          "1": { name: "keyword.property.mkdocs" }
+scopeName: source.mkdocs
+injectionSelector: L:text.html.markdown

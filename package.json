@@ -1,0 +1,35 @@
+{
+  "name": "mkdocs-highlighter",
+  "displayName": "MkDocs Highlighter",
+  "description": "Highlighter for Mkdocs Syntax",
+  "version": "0.0.1",
+  "publisher": "aikebang",
+  "icon": "assets/mkdocs.png",
+  "engines": {
+    "vscode": "^1.83.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "grammars": [
+      {
+        "injectTo": [
+          "text.html.markdown"
+        ],
+        "scopeName": "source.mkdocs",
+        "path": "./syntaxes/mkdocs.tmLanguage.json"
+      }
+    ],
+    "themes": [
+      {
+          "label": "MkDocs Theme",
+          "uiTheme": "vs-dark",
+          "path": "./themes/mkdocs.tmLanguage.json"
+      }
+  ]
+  },
+  "devDependencies": {
+    "js-yaml": "^4.1.0"
+  }
+}

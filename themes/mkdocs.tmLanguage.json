@@ -1,0 +1,22 @@
+{
+  "name": "MkDocs Theme",
+  "type": "dark",
+  "colors": {
+  },
+  "tokenColors": [
+    {
+      "scope": "keyword.control.mkdocs",
+      "settings": {
+        "foreground": "#b774ae",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": "keyword.property.mkdocs",
+      "settings": {
+        "foreground": "#8addff",
+        "fontStyle": "italic"
+      }
+    }
+  ]
+}
