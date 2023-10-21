@@ -1,10 +1,12 @@
 {
-  "name": "mkdocs-highlighter",
-  "displayName": "MkDocs Highlighter",
-  "description": "Highlighter for Mkdocs Syntax",
-  "version": "0.0.1",
+  "name": "mkdocs-syntax-highlight",
+  "displayName": "MkDocs Syntax Highlight",
+  "description": "Highlight for Mkdocs Syntax",
+  "version": "0.0.2",
   "publisher": "aikebang",
+  "repository": "https://github.com/libukai/mkdocs-highlight",
   "icon": "assets/mkdocs.png",
+  "license": "MIT",
   "engines": {
     "vscode": "^1.83.0"
   },

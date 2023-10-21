@@ -1,13 +1,7 @@
-# MkDocs Syntax Highlighter README
+# MkDocs 专属语法高亮
 
-为了能够让 MkDocs 的专属语法在 VS Code 的编辑器中显示的更加美观，特意创建了这个语法高亮扩展，目前支持的语法高亮如下：
+为了让 MkDocs 的专属语法能在 VS Code 中显示得更加美观，特意创建了这个语法高亮扩展，将根据实际的创作情况持续增加和优化。
 
-## 支持语法
+## 语法列表
 
-- [x] neoteroi
-
-## 更新日志
-
-### 0.0.1
-
-- 创建扩展
+- neoteroi

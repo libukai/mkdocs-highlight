@@ -1,9 +1,12 @@
-# Change Log
+# 更新日志
 
-All notable changes to the "mkdocs-lang" extension will be documented in this file.
+## [待发布]
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+- 增加 neoteroi 全部语法高亮
 
-## [Unreleased]
+## [0.0.1] - 2023-10-21
 
-- Initial release
+### 新增
+
+- 创建插件
+- 增加 neoteroi timeline 语法高亮
