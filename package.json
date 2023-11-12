@@ -2,7 +2,7 @@
   "name": "mkdocs-syntax-highlight",
   "displayName": "MkDocs Syntax Highlight",
   "description": "Highlight for Mkdocs Syntax",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "publisher": "aikebang",
   "repository": "https://github.com/libukai/mkdocs-highlight",
   "icon": "assets/mkdocs.png",
