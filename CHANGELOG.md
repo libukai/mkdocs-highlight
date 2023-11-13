@@ -1,5 +1,9 @@
 # 更新日志
 
+## [0.2.0] - 2023-11-13
+
+-  增加了 Reamde 文档
+
 ## [0.1.0] - 2023-11-13
 
 - 增加 neoteroi 全部语法高亮，包括 Timeline、Cards、Gantt、Spantable
