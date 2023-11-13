@@ -2,21 +2,42 @@
   "name": "MkDocs",
   "patterns": [
     {
-      "include": "#timeline"
+      "include": "#timeline" 
+    },
+    {
+      "include": "#cards"
+    },
+    {
+      "include": "#gantt"
+    },
+    {
+      "include": "#keys"
+    },
+    {
+      "include": "#markmap"
+    },
+    {
+      "include": "#spantable"
+    },
+    {
+      "include": "#content"
+    },
+    {
+      "include": "#progressbar"
     }
   ],
   "repository": {
     "timeline": {
-      "begin": "(:):(timeline)(:):",
-      "end": "(:):(/timeline)(:):",
+      "begin": "(::timeline::)",
+      "end": "(::/timeline::)",
       "beginCaptures": {
-        "2": {
-          "name": "keyword.control.mkdocs"
+        "1": {
+          "name": "keyword.control"
         }
       },
       "endCaptures": {
-        "2": {
-          "name": "keyword.control.mkdocs"
+        "1": {
+          "name": "keyword.control"
         }
       },
       "patterns": [
@@ -24,7 +45,198 @@
           "match": "^\\s*-?\\s*(title|content|icon|sub_title)\\s*:",
           "captures": {
             "1": {
-              "name": "keyword.property.mkdocs"
+              "name": "string"
+            }
+          }
+        }
+      ]
+    },
+    "cards": {
+      "begin": "(::cards::)",
+      "end": "(::/cards::)",
+      "beginCaptures": {
+        "1": {
+          "name": "keyword.control"
+        }
+      },
+      "endCaptures": {
+        "1": {
+          "name": "keyword.control"
+        }
+      },
+      "patterns": [
+        {
+          "match": "^\\s*-?\\s*(title|content|image)\\s*:",
+          "captures": {
+            "1": {
+              "name": "string"
+            }
+          }
+        }
+      ]
+    },
+    "gantt": {
+      "begin": "(::gantt::)",
+      "end": "(::/gantt::)",
+      "beginCaptures": {
+        "1": {
+          "name": "keyword.control"
+        }
+      },
+      "endCaptures": {
+        "1": {
+          "name": "keyword.control"
+        }
+      },
+      "patterns": [
+        {
+          "match": "^\\s*-?\\s*(title|activities|start|end|lasts)\\s*:",
+          "captures": {
+            "1": {
+              "name": "string"
+            }
+          }
+        }
+      ]
+    },
+    "spantable": {
+      "begin": "(::spantable::)",
+      "end": "(::end-spantable::)",
+      "beginCaptures": {
+        "1": {
+          "name": "keyword.control"
+        }
+      },
+      "endCaptures": {
+        "1": {
+          "name": "keyword.control"
+        }
+      },
+      "patterns": [
+        {
+          "match": "caption=\"\\w*\"",
+          "captures": {
+            "0": {
+              "name": "entity.other.attribute-name"
+            }
+          }
+        }
+      ]
+    },
+    "keys": {
+      "begin": "(\\+\\+)",
+      "end": "(\\+\\+)",
+      "beginCaptures": {
+        "1": {
+          "name": "keyword.control"
+        }
+      },
+      "endCaptures": {
+        "1": {
+          "name": "keyword.control"
+        }
+      },
+      "patterns": [
+        {
+          "match": "\\+",
+          "name": "keyword.control"
+        },
+        {
+          "match": "\"[^\"]+\"",
+          "name": "entity.other.attribute-name"
+        },
+        {
+          "match": "[^\"\\+]+",
+          "name": "entity.other.attribute-name"
+        }
+      ]
+    },
+    "badges": {
+      "begin": "^\\|",
+      "end": "\\|$",
+      "beginCaptures": {
+        "0": {
+          "name": "keyword.control"
+        }
+      },
+      "endCaptures": {
+        "0": {
+          "name": "keyword.control"
+        }
+      },
+      "patterns": [
+        {
+          "match": "\\|",
+          "name": "keyword.control"
+        },
+        {
+          "match": "[^\\|]+",
+          "name": "string"
+        }
+      ]
+    },
+    "markmap": {
+      "begin": "```markmap",
+      "end": "```",
+      "beginCaptures": {
+        "0": {
+          "name": "keyword.control"
+        }
+      },
+      "endCaptures": {
+        "0": {
+          "name": "keyword.control"
+        }
+      },
+      "patterns": [
+        {
+          "match": "(#|\\*)",
+          "name": "punctuation.definition.list.begin.markdown"
+        }
+      ]
+    },
+    "content": {
+      "patterns": [
+        {
+          "match": "(^={3}) (\".*?\")",
+          "captures": {
+            "1": {
+              "name": "keyword.control"
+            },
+            "2": {
+              "name": "entity.other.attribute-name"
+            }
+          }
+        },
+        {
+          "match": "( {4}\\*)",
+          "name": "string"
+        },
+        {
+          "match": "( {4}\\d+\\.)",
+          "name": "string"
+        }
+      ]
+    },
+    "progressbar": {
+      "patterns": [
+        {
+          "match": "(\\[)=(\\d+%)(\\s+\\\"(\\d+%)\\\")?(\\])",
+          "captures": {
+            "1": {
+              "name": "keyword.control"
+            },
+            "2": {
+              "name": "string"
+            },
+            "3": {
+              "name": "entity.other.attribute-name"
+            },
+            "4": {
+              "name": "entity.other.attribute-name"
+            },
+            "5": {
+              "name": "keyword.control"
             }
           }
         }
