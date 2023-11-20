@@ -124,32 +124,18 @@
       ]
     },
     "keys": {
-      "begin": "(\\+\\+)",
-      "end": "(\\+\\+)",
-      "beginCaptures": {
+      "match": "(\\+\\+)([^\\n]+)(\\+\\+)",
+      "captures": {
         "1": {
           "name": "keyword.control"
-        }
-      },
-      "endCaptures": {
-        "1": {
-          "name": "keyword.control"
-        }
-      },
-      "patterns": [
-        {
-          "match": "\\+",
-          "name": "keyword.control"
         },
-        {
-          "match": "\"[^\"]+\"",
+        "2": {
           "name": "entity.other.attribute-name"
         },
-        {
-          "match": "[^\"\\+]+",
-          "name": "entity.other.attribute-name"
+        "3": {
+          "name": "keyword.control"
         }
-      ]
+      }
     },
     "badges": {
       "begin": "^\\|",

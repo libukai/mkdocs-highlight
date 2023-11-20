@@ -5,10 +5,10 @@
 ## 支持语法
 
 - [X] *neoteroi 全部语法高亮，包括 Timeline、Cards、Gantt、Spantable* [2023-11-13]
-- [X] *Keys 语法高亮* [2023-11-13]
 - [X] *Content Tab 语法高亮* [2023-11-13]
 - [X] *Markmap 语法高亮* [2023-11-13]
 - [X] *Progressbar 语法高亮* [2023-11-13]
+- [ ] *Keys 语法高亮（待优化）* [2023-11-13]
 
 ## 配合插件
 
@@ -21,4 +21,3 @@
 
 - [MkDocs 基础语法](https://aikebang.net/pages/mkdocs/mkdocs%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95.html)
 - [MkDocs 加强语法](https://aikebang.net/pages/mkdocs/mkdocs%E5%8A%A0%E5%BC%BA%E8%AF%AD%E6%B3%95.html)
-

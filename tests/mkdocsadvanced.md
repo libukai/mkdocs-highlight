@@ -29,6 +29,7 @@ tags:
 
 - ++ctrl+alt+"My Special Key"++
 - ++cmd+alt+"&Uuml;"++
+- ++alt+del++
 
 ## Admonitions
 
